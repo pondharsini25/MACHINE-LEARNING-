@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('static/media/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .image-frame {
+            border: 2px solid #000; /* Black border with 2px width */
+            padding: 5px; /* Optional: Add padding inside the border */
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            /* background-color: #fff; */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .image-frame {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .lead {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .special-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .special-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        <h1>Detected Rope Condition: {{ msg }}</h1>
+        
+   
+        <img src="{{ src }}" alt="Uploaded Image" width="400" class="image-frame">
+        <a href="/upload" class="special-link">Upload Another Image</a>
+    </div>
+</body>
+</html>
